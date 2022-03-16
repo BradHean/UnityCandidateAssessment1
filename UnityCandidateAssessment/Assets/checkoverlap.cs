@@ -1,21 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class checkoverlap : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    //for trigger events to be called, at least one object needs a rigidbody
+    //I added one to SphereA and all events are fired.
     private void OnTriggerEnter(Collider other)
     {
         print("Started overlap");
